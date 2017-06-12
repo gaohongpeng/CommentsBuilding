@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "GHPViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    GHPViewController *root = [[GHPViewController alloc]init];
+    self.window.rootViewController = root;
+
     return YES;
 }
 

@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "YJYCommentsCell.h"
 @interface ViewController ()
+
 
 @end
 
@@ -16,7 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view from its nib.
+}
+
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
 }
 
 
