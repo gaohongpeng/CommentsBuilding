@@ -4,7 +4,7 @@
 //
 //  Created by 高鸿鹏 on 2017/6/12.
 //  Copyright © 2017年 Gaohongpeng. All rights reserved.
-//
+//  QQ:410107098
 
 #import "GHPViewController.h"
 #import "YJYCommentsCell.h"
@@ -21,6 +21,8 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+
+//本人qq410107098
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
         return 15+15+85+2+5;
