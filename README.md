@@ -3,3 +3,4 @@
 QQ:410107098
 
 ![image](http://github.com/gaohongpeng/CommentSBuilding/GHPCommentBuilding/GHP/IMG_1046.PNG)
+![image](http://github.com/gaohongpeng/CommentSBuilding/CommentSBuilding/GHP/gailou.gif)
