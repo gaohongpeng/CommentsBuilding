@@ -8,6 +8,7 @@
 
 #import "GHPViewController.h"
 #import "YJYCommentsCell.h"
+#import "YJYCommentsTool.h"
 @interface GHPViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *mytableView;
 
@@ -25,16 +26,59 @@
 //本人qq410107098
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
-        return 15+15+85+2+5;
+        NSArray *array = @[@"❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试..........❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!$&!&%!$%^%!^G**!&!!*@$(!&$GBDH!*^*!$B",@"测试测试测试测试测试测试测试测试测❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!试测试测试测试",@"测试测试测试测试测试测试测试测试测试测试测试测试",@"测试测试测试测试测试测试❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试",@"测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试",@"测试测试测试测试测试测试测试测试❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试",@"测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!试",@"测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"];
+        NSInteger floor = 8;  //楼层数
+        
+        float box_H = 0.0; //每个黄框的高度
+        float width = 0.0;  //黄色背景框的宽
+        float height = 0.0;  //最外层框高度
+        
+        //计算出最外层黄色框高度 和 最外层 内容(楼层/名字)上边距
+        //黄色框高度 = 105 + 评论内容高度
+        CGFloat first = 0.0; //最外面一层的高度
+        for (int i = 0 ; i < floor; i++) {
+            
+            if (i < 4) {
+                width = SCREEN_WIDTH - 65- 15 - (i*6);
+                
+                box_H = [YJYCommentsTool getHeightWithString:array[i] backWidth:width] +105;
+                
+                if (i == 0) first = box_H;
+                
+            }else{
+                width = SCREEN_WIDTH - 65- 15 - (4*6);
+                
+                box_H = [YJYCommentsTool getHeightWithString:array[i] backWidth:width] +105;
+            }
+            
+            height += box_H;
+            
+        }
+        return height + 30 + 22 +15+75;
     }else if (indexPath.row == 1){
-        return  15+15+ 1 * 125+40 +75;
-    }else if(indexPath.row == 2){
-        return  15+15+ 2 * 125+40 +75;
-    }
-    else if (indexPath.row == 3) {
-        return  15+15+ 8 * 125+40 +75;
-    }else if (indexPath.row == 4){
-        return  15+15+ 3 * 125+40 +75 +70;  //楼层折叠时 显示4层
+        
+        NSArray *array = @[@"测试测试测试测试测试❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试..........!!!!@@#@$%$^%&$%*$",@"测试测❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!试测试测试测试测试测试测试试测试测试测试测试测试测试测测试测试测试测试",@"测试测试测试测❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!!@#!@$!@#%^$%^&$%*^(&(^$##$@@@!#!#$%^试测试测试测试测试测试测试测试测试",@"测试测试测试❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试..//???fkahf",@"测试测试测试测试测试测试测试测试试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测测试测试试测试测试测试测试测试测试测试测试测试测试测试测试测试测测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试",@"测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试试测试测试测试测试测试测试测测试测试测试测试测试测试测试测试测试测试❤️🐷🐴🐑🐦^!&@*&%$^@*(!)$!)!$*&!测试测试测试测试测试"];
+        float box_H = 0.0; //每个黄框的高度
+        float width = 0.0;  //黄色背景框的宽
+        float height = 0.0;  //最外层框高度
+        
+        //计算出最外层黄色框高度 和 最外层 内容(楼层/名字)上边距
+        CGFloat first = 0.0; //最外面一层的高度
+        for (int i = 0 ; i < 4; i++) {
+            
+            width = SCREEN_WIDTH - 65- 15 - (i*6);
+            
+            box_H = [YJYCommentsTool getHeightWithString:array[i] backWidth:width] +105;
+            
+            if (i == 1) box_H = 70;
+            
+            if (i == 0) first = box_H;
+            
+            height += box_H;
+            
+        }
+        
+        return height + 30 + 22 +15+75;
     }
     return 0;
 }
@@ -45,7 +89,7 @@
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 2;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellID = @"cell";
@@ -55,13 +99,9 @@
     }
     
     if (indexPath.row == 1) {
-        [cell FloorShow:1];
-    }else if (indexPath.row == 2){
-        [cell FloorShow:2];
-    }else if (indexPath.row == 3){
-        [cell FloorShow:8];
-    }else if (indexPath.row == 4){
         [cell FloorFolding];
+    }else{
+        [cell FloorShow:8];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;

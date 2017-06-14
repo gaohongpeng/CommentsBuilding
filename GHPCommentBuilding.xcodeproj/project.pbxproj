@@ -21,8 +21,8 @@
 		03178FAA1EEE8B9D008A4E59 /* UIView+LoadNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 03178FA91EEE8B9D008A4E59 /* UIView+LoadNib.m */; };
 		03178FB21EEE8D5E008A4E59 /* GHPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03178FB01EEE8D5E008A4E59 /* GHPViewController.m */; };
 		03178FB31EEE8D5E008A4E59 /* GHPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03178FB11EEE8D5E008A4E59 /* GHPViewController.xib */; };
-		03178FB91EEEB1F9008A4E59 /* IMG_1046.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 03178FB81EEEB1F9008A4E59 /* IMG_1046.PNG */; };
 		03178FBB1EEEB20C008A4E59 /* gailou.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03178FBA1EEEB20C008A4E59 /* gailou.gif */; };
+		03178FC11EF0D926008A4E59 /* YJYCommentsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 03178FC01EF0D926008A4E59 /* YJYCommentsTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +70,9 @@
 		03178FAF1EEE8D5E008A4E59 /* GHPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHPViewController.h; sourceTree = "<group>"; };
 		03178FB01EEE8D5E008A4E59 /* GHPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHPViewController.m; sourceTree = "<group>"; };
 		03178FB11EEE8D5E008A4E59 /* GHPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHPViewController.xib; sourceTree = "<group>"; };
-		03178FB81EEEB1F9008A4E59 /* IMG_1046.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1046.PNG; sourceTree = "<group>"; };
 		03178FBA1EEEB20C008A4E59 /* gailou.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gailou.gif; sourceTree = "<group>"; };
+		03178FBF1EF0D926008A4E59 /* YJYCommentsTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJYCommentsTool.h; sourceTree = "<group>"; };
+		03178FC01EF0D926008A4E59 /* YJYCommentsTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJYCommentsTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				03178FBA1EEEB20C008A4E59 /* gailou.gif */,
-				03178FB81EEEB1F9008A4E59 /* IMG_1046.PNG */,
 				03178FAB1EEE8D27008A4E59 /* controller */,
 				03178F9E1EEE8AF0008A4E59 /* view */,
 			);
@@ -191,6 +191,8 @@
 		03178FAB1EEE8D27008A4E59 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				03178FBF1EF0D926008A4E59 /* YJYCommentsTool.h */,
+				03178FC01EF0D926008A4E59 /* YJYCommentsTool.m */,
 				03178FAF1EEE8D5E008A4E59 /* GHPViewController.h */,
 				03178FB01EEE8D5E008A4E59 /* GHPViewController.m */,
 				03178FB11EEE8D5E008A4E59 /* GHPViewController.xib */,
@@ -306,7 +308,6 @@
 			files = (
 				03178F7A1EEE8908008A4E59 /* LaunchScreen.storyboard in Resources */,
 				03178FBB1EEEB20C008A4E59 /* gailou.gif in Resources */,
-				03178FB91EEEB1F9008A4E59 /* IMG_1046.PNG in Resources */,
 				03178F771EEE8908008A4E59 /* Assets.xcassets in Resources */,
 				03178FA61EEE8AF0008A4E59 /* YJYCommentsCell.xib in Resources */,
 				03178FB31EEE8D5E008A4E59 /* GHPViewController.xib in Resources */,
@@ -339,6 +340,7 @@
 				03178F6F1EEE8908008A4E59 /* AppDelegate.m in Sources */,
 				03178FB21EEE8D5E008A4E59 /* GHPViewController.m in Sources */,
 				03178FAA1EEE8B9D008A4E59 /* UIView+LoadNib.m in Sources */,
+				03178FC11EF0D926008A4E59 /* YJYCommentsTool.m in Sources */,
 				03178FA41EEE8AF0008A4E59 /* YJYComments.m in Sources */,
 				03178FA51EEE8AF0008A4E59 /* YJYCommentsCell.m in Sources */,
 				03178F6C1EEE8908008A4E59 /* main.m in Sources */,
