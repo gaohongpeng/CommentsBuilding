@@ -23,6 +23,12 @@
 		03178FB31EEE8D5E008A4E59 /* GHPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03178FB11EEE8D5E008A4E59 /* GHPViewController.xib */; };
 		03178FBB1EEEB20C008A4E59 /* gailou.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03178FBA1EEEB20C008A4E59 /* gailou.gif */; };
 		03178FC11EF0D926008A4E59 /* YJYCommentsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 03178FC01EF0D926008A4E59 /* YJYCommentsTool.m */; };
+		03A3221E1EF9250500019795 /* json.json in Resources */ = {isa = PBXBuildFile; fileRef = 03A3221D1EF9250500019795 /* json.json */; };
+		03A3222C1EF94A2700019795 /* commentsBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A322221EF94A2700019795 /* commentsBaseClass.m */; };
+		03A3222D1EF94A2700019795 /* commentsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A322241EF94A2700019795 /* commentsData.m */; };
+		03A3222E1EF94A2700019795 /* commentsHot.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A322271EF94A2700019795 /* commentsHot.m */; };
+		03A3222F1EF94A2700019795 /* commentsReply.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A322291EF94A2700019795 /* commentsReply.m */; };
+		03A322301EF94A2700019795 /* commentsTimeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A3222B1EF94A2700019795 /* commentsTimeLine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +79,18 @@
 		03178FBA1EEEB20C008A4E59 /* gailou.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gailou.gif; sourceTree = "<group>"; };
 		03178FBF1EF0D926008A4E59 /* YJYCommentsTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJYCommentsTool.h; sourceTree = "<group>"; };
 		03178FC01EF0D926008A4E59 /* YJYCommentsTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJYCommentsTool.m; sourceTree = "<group>"; };
+		03A3221D1EF9250500019795 /* json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = json.json; sourceTree = "<group>"; };
+		03A322211EF94A2700019795 /* commentsBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commentsBaseClass.h; sourceTree = "<group>"; };
+		03A322221EF94A2700019795 /* commentsBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commentsBaseClass.m; sourceTree = "<group>"; };
+		03A322231EF94A2700019795 /* commentsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commentsData.h; sourceTree = "<group>"; };
+		03A322241EF94A2700019795 /* commentsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commentsData.m; sourceTree = "<group>"; };
+		03A322251EF94A2700019795 /* commentsDataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commentsDataModels.h; sourceTree = "<group>"; };
+		03A322261EF94A2700019795 /* commentsHot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commentsHot.h; sourceTree = "<group>"; };
+		03A322271EF94A2700019795 /* commentsHot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commentsHot.m; sourceTree = "<group>"; };
+		03A322281EF94A2700019795 /* commentsReply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commentsReply.h; sourceTree = "<group>"; };
+		03A322291EF94A2700019795 /* commentsReply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commentsReply.m; sourceTree = "<group>"; };
+		03A3222A1EF94A2700019795 /* commentsTimeLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commentsTimeLine.h; sourceTree = "<group>"; };
+		03A3222B1EF94A2700019795 /* commentsTimeLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commentsTimeLine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +185,8 @@
 		03178F9D1EEE893A008A4E59 /* GHP */ = {
 			isa = PBXGroup;
 			children = (
+				03A3221F1EF94A2700019795 /* model */,
+				03A3221D1EF9250500019795 /* json.json */,
 				03178FBA1EEEB20C008A4E59 /* gailou.gif */,
 				03178FAB1EEE8D27008A4E59 /* controller */,
 				03178F9E1EEE8AF0008A4E59 /* view */,
@@ -198,6 +218,32 @@
 				03178FB11EEE8D5E008A4E59 /* GHPViewController.xib */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		03A3221F1EF94A2700019795 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				03A322201EF94A2700019795 /* CommentsModel */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		03A322201EF94A2700019795 /* CommentsModel */ = {
+			isa = PBXGroup;
+			children = (
+				03A322211EF94A2700019795 /* commentsBaseClass.h */,
+				03A322221EF94A2700019795 /* commentsBaseClass.m */,
+				03A322231EF94A2700019795 /* commentsData.h */,
+				03A322241EF94A2700019795 /* commentsData.m */,
+				03A322251EF94A2700019795 /* commentsDataModels.h */,
+				03A322261EF94A2700019795 /* commentsHot.h */,
+				03A322271EF94A2700019795 /* commentsHot.m */,
+				03A322281EF94A2700019795 /* commentsReply.h */,
+				03A322291EF94A2700019795 /* commentsReply.m */,
+				03A3222A1EF94A2700019795 /* commentsTimeLine.h */,
+				03A3222B1EF94A2700019795 /* commentsTimeLine.m */,
+			);
+			path = CommentsModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +355,7 @@
 				03178F7A1EEE8908008A4E59 /* LaunchScreen.storyboard in Resources */,
 				03178FBB1EEEB20C008A4E59 /* gailou.gif in Resources */,
 				03178F771EEE8908008A4E59 /* Assets.xcassets in Resources */,
+				03A3221E1EF9250500019795 /* json.json in Resources */,
 				03178FA61EEE8AF0008A4E59 /* YJYCommentsCell.xib in Resources */,
 				03178FB31EEE8D5E008A4E59 /* GHPViewController.xib in Resources */,
 				03178F751EEE8908008A4E59 /* Main.storyboard in Resources */,
@@ -337,10 +384,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				03178F721EEE8908008A4E59 /* ViewController.m in Sources */,
+				03A3222D1EF94A2700019795 /* commentsData.m in Sources */,
 				03178F6F1EEE8908008A4E59 /* AppDelegate.m in Sources */,
+				03A3222E1EF94A2700019795 /* commentsHot.m in Sources */,
+				03A322301EF94A2700019795 /* commentsTimeLine.m in Sources */,
 				03178FB21EEE8D5E008A4E59 /* GHPViewController.m in Sources */,
 				03178FAA1EEE8B9D008A4E59 /* UIView+LoadNib.m in Sources */,
 				03178FC11EF0D926008A4E59 /* YJYCommentsTool.m in Sources */,
+				03A3222C1EF94A2700019795 /* commentsBaseClass.m in Sources */,
+				03A3222F1EF94A2700019795 /* commentsReply.m in Sources */,
 				03178FA41EEE8AF0008A4E59 /* YJYComments.m in Sources */,
 				03178FA51EEE8AF0008A4E59 /* YJYCommentsCell.m in Sources */,
 				03178F6C1EEE8908008A4E59 /* main.m in Sources */,
